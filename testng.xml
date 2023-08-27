@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RestAssured Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="REST API CRUD">
+        <classes>
+            <class name="tests.TestGetUsers"/>
+            <class name="tests.TestPostUser"/>
+            <class name="tests.TestPatchUser"/>
+            <class name="tests.TestDeleteUser"/>
+            <!-- Add more test classes as needed -->
+        </classes>
+    </test>
+</suite>
